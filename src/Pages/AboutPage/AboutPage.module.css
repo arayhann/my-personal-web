@@ -1,0 +1,81 @@
+.AboutPage {
+  min-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 1440px;
+  background-color: #75cdff;
+}
+
+.Trees {
+  right: 10vw;
+}
+
+.BigTree {
+  position: absolute;
+  z-index: 5;
+  right: 100px;
+  bottom: 20%;
+}
+
+.MediumTree {
+  position: absolute;
+  z-index: 6;
+  right: 300px;
+  bottom: 20%;
+}
+
+.SmallTree {
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  bottom: 20%;
+}
+
+.Gate {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  bottom: 20%;
+}
+
+.TxtAbout {
+  position: absolute;
+  z-index: 7;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 40%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .AboutPage {
+    min-width: 100vw;
+    left: 100vw;
+  }
+
+  .TxtAbout {
+    width: 70vw;
+    top: 40%;
+  }
+
+  .BigTree {
+    width: 100px;
+    right: 30px;
+  }
+
+  .MediumTree {
+    right: 100px;
+  }
+
+  .MediumTree,
+  .SmallTree {
+    width: 80px;
+  }
+
+  .Gate {
+    width: 150px;
+  }
+}

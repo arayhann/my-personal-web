@@ -1,0 +1,13 @@
+.Ground {
+  margin-top: auto;
+  background-color: #c98846;
+  background-image: url('Desert-ground.png');
+  background-repeat: repeat;
+  position: absolute;
+  z-index: 10;
+}
+
+.Grass {
+  height: 65px;
+  background-image: url('Desert-grass.png');
+}

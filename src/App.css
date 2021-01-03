@@ -1,0 +1,12 @@
+.App-Base {
+  position: relative;
+  overflow-y: hidden;
+  background-color: #75cdff;
+}
+.App {
+  text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,56 @@
+.FinishPage {
+  min-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 20160px;
+  background-color: #75cdff;
+}
+
+.Gate {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  bottom: 20%;
+}
+
+.FireWorks1 {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.FireWorks2 {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
+}
+
+.FireWorks3 {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+}
+
+@media (max-width: 500px) {
+  .FinishPage {
+    min-width: 100vw;
+    left: 1500vw;
+  }
+
+  .Gate {
+    width: 150px;
+  }
+
+  .FireWorks1,
+  .FireWorks2,
+  .FireWorks3 {
+    width: 100px;
+  }
+}

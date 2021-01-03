@@ -1,0 +1,73 @@
+.AboutPage {
+  min-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 7200px;
+  background-color: #e4c492;
+}
+
+.BigCactus {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 20%;
+}
+
+.SmallCactus {
+  position: absolute;
+  z-index: 6;
+  left: 360px;
+  bottom: 20%;
+}
+
+.Pyramid {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+}
+
+.Gate {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  bottom: 20%;
+}
+
+.TxtSkills {
+  position: absolute;
+  z-index: 7;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 40%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .AboutPage {
+    min-width: 100vw;
+    left: 500vw;
+  }
+  .TxtSkills {
+    width: 70vw;
+    top: 40%;
+  }
+
+  .Gate {
+    width: 150px;
+  }
+
+  .Pyramid {
+    width: 100vw;
+  }
+
+  .SmallCactus {
+    left: 140px;
+    width: 50px;
+  }
+
+  .BigCactus {
+    width: 100px;
+  }
+}

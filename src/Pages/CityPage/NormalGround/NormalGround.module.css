@@ -1,0 +1,26 @@
+.Ground {
+  margin-top: auto;
+  background-color: #8b5b3a;
+  background-image: url('ground.png');
+  background-repeat: repeat;
+  position: absolute;
+  z-index: 10;
+  width: 1000px;
+  height: 150px;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.Grass {
+  height: 65px;
+  background-image: url('grass.png');
+}
+
+@media (max-width: 500px) {
+  .Ground {
+    width: 80vw;
+    height: 10%;
+  }
+}

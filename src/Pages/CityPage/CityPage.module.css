@@ -1,0 +1,77 @@
+.CityPage {
+  min-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 4320px;
+  background-color: #75cdff;
+}
+
+.CityNames {
+  z-index: 5;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: auto;
+  margin-bottom: -3px;
+  z-index: 11;
+}
+
+.CityName {
+  display: inline-block;
+  list-style: none;
+  margin: 0 70px;
+}
+
+.Gedung {
+  position: absolute;
+  bottom: calc(20% + 150px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  z-index: 5;
+}
+
+.MediumTree1 {
+  position: absolute;
+  z-index: 6;
+  bottom: calc(20% + 150px);
+  right: 230px;
+}
+
+.MediumTree2 {
+  position: absolute;
+  z-index: 6;
+  bottom: calc(20% + 150px);
+  left: 230px;
+}
+
+@media (max-width: 500px) {
+  .CityPage {
+    min-width: 100vw;
+    left: 300vw;
+  }
+
+  .Gedung {
+    width: 70vw;
+    bottom: 30%;
+  }
+
+  .MediumTree1,
+  .MediumTree2 {
+    width: 80px;
+    bottom: 30%;
+  }
+
+  .CityName {
+    margin: 0 10px;
+  }
+
+  .Text {
+    width: 45px;
+  }
+}

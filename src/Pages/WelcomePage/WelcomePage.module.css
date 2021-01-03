@@ -1,0 +1,84 @@
+.WelcomePage {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #75cdff;
+}
+
+.LeftTrees {
+  position: absolute;
+  z-index: 5;
+  bottom: 20%;
+  left: 1vw;
+}
+
+.RightTrees {
+  position: absolute;
+  z-index: 5;
+  bottom: 20%;
+  right: 1vw;
+}
+
+.BigTree1 {
+  position: absolute;
+  z-index: 5;
+  bottom: 20%;
+  left: 0px;
+}
+.BigTree2 {
+  position: absolute;
+  z-index: 5;
+  bottom: 20%;
+  right: 0px;
+}
+
+.MediumTree {
+  position: absolute;
+  z-index: 6;
+  bottom: 20%;
+  right: 140px;
+}
+
+.SmallTree {
+  position: absolute;
+  z-index: 6;
+  bottom: 20%;
+  left: 140px;
+}
+
+.TxtName {
+  position: absolute;
+  z-index: 7;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 20%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .TxtName {
+    width: 90vw;
+    top: 20%;
+  }
+
+  .BigTree2,
+  .BigTree1 {
+    width: 100px;
+  }
+
+  .MediumTree,
+  .SmallTree {
+    width: 80px;
+  }
+
+  .MediumTree {
+    right: 50px;
+  }
+
+  .SmallTree {
+    left: 50px;
+  }
+}

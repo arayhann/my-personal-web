@@ -1,0 +1,115 @@
+.Skill {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  bottom: 20%;
+}
+
+.TxtContact {
+  margin-bottom: -60px;
+}
+
+.Sign {
+  margin-top: auto;
+  z-index: 5;
+  margin-bottom: 100px;
+}
+
+.Papan {
+  box-sizing: border-box;
+  color: #d3692d;
+  padding: 20px;
+  background-color: #f4a03c;
+  font-family: 'Fredoka One', cursive;
+  text-align: right;
+  padding-top: 60px;
+  box-shadow: -10px 10px 0px 10px #d3692d;
+}
+
+.Description {
+  font-size: 20px;
+  margin: 10px 0;
+  margin-right: auto;
+  padding: 0;
+}
+
+.Date {
+  font-size: 20px;
+  margin: 0;
+}
+
+.Input {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 14px;
+  color: #fff;
+  width: 662px;
+  height: 30px;
+  margin: auto 0px;
+  margin-left: 20px;
+  padding: 0 10px;
+  border: 0;
+  background-color: #d3692d;
+}
+
+.InputDescription {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 14px;
+  color: #fff;
+  width: 662px;
+  height: 70px;
+  margin: 10px 0px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 0;
+  resize: none;
+  background-color: #d3692d;
+}
+
+.Send {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .TxtContact {
+    width: 70vw;
+  }
+
+  .Skill {
+    right: 0;
+  }
+
+  .Date {
+    font-size: 10px;
+  }
+
+  .Description {
+    font-size: 8px;
+  }
+
+  .Papan {
+    max-width: 300px;
+  }
+
+  .InputDescription {
+    padding: 0;
+    margin-left: 10px;
+    font-size: 8px;
+    height: 40px;
+    width: 200px;
+  }
+
+  .Input {
+    padding: 0;
+    margin-left: 10px;
+    font-size: 8px;
+    height: 15px;
+    width: 200px;
+  }
+
+  .Send {
+    width: 100px;
+  }
+}

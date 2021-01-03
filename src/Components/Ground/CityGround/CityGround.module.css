@@ -1,0 +1,13 @@
+.Ground {
+  margin-top: auto;
+  background-color: #484848;
+  background-image: url('City-ground.png');
+  background-repeat: repeat;
+  position: absolute;
+  z-index: 10;
+}
+
+.Grass {
+  height: 46px;
+  background-image: url('City-grass.png');
+}

@@ -1,0 +1,33 @@
+.CloudLayer {
+  position: absolute;
+  height: 100%;
+  max-width: 21600px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.Cloud {
+  padding-top: 10px;
+  height: 151px;
+  opacity: 0.5;
+}
+
+.Cloud1 {
+  padding-top: 10px;
+  padding-left: 200px;
+  height: 151px;
+  opacity: 0.5;
+}
+
+.Cloud2 {
+  padding-left: 200px;
+  padding-top: 100px;
+  height: 151px;
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .CloudLayer {
+    max-width: 1500vw;
+  }
+}

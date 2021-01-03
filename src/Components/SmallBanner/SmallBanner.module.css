@@ -1,0 +1,36 @@
+.SmallBanner {
+  display: flex;
+  justify-content: center;
+}
+
+.Banner {
+  background-color: #f4a03c;
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  padding: 10px;
+  height: 25px;
+  margin: 0;
+  z-index: 2;
+}
+
+.BannerLeft {
+  margin-right: -5px;
+  z-index: 1;
+}
+
+.BannerRight {
+  margin-left: -5px;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .Banner {
+    font-size: 8px;
+    padding: 0px;
+    height: 10px;
+  }
+  .BannerRight,
+  .BannerLeft {
+    height: 10px;
+  }
+}

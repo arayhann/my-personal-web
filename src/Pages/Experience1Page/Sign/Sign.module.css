@@ -1,0 +1,90 @@
+.Skill {
+  display: flex;
+  position: absolute;
+  left: 100px;
+  bottom: 20%;
+}
+
+.Sign {
+  margin-top: auto;
+  z-index: 5;
+}
+
+.Ballon {
+  margin-left: 10px;
+  margin-bottom: -5px;
+  z-index: 10;
+}
+
+.Papan {
+  box-sizing: border-box;
+  color: white;
+  padding: 20px;
+  max-width: 700px;
+  background-color: #444444;
+  border: 10px solid #353535;
+  font-family: 'Fredoka One', cursive;
+  text-align: left;
+  z-index: 9;
+}
+
+.Title {
+  font-size: 40px;
+}
+
+.Description {
+  font-size: 20px;
+  margin: 0;
+}
+
+.Date {
+  font-size: 20px;
+  margin: 0;
+}
+
+.Tiangs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -5px;
+}
+
+.Tiang {
+  margin: 0 60px;
+  width: 89px;
+  height: 176px;
+  display: inline-block;
+  background-color: #405075;
+}
+
+@media (max-width: 500px) {
+  .Skill {
+    left: 0;
+  }
+
+  .Tiang {
+    margin: 0 40px;
+    height: 80px;
+    width: 40px;
+  }
+
+  .Title {
+    font-size: 15px;
+  }
+
+  .Date {
+    font-size: 10px;
+  }
+
+  .Description {
+    font-size: 8px;
+  }
+
+  .Papan {
+    max-width: 300px;
+  }
+
+  .Ballon {
+    width: 170px;
+    margin-left: -30px;
+  }
+}

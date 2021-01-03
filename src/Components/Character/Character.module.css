@@ -1,0 +1,16 @@
+.Character {
+  position: fixed;
+  z-index: 20;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .Character {
+    width: 70px;
+  }
+}

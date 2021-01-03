@@ -1,0 +1,52 @@
+.Plant {
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  z-index: 5;
+}
+
+.Stem {
+  width: 8px;
+  background-color: #487d28;
+  margin-top: auto;
+}
+
+.LeafRight {
+  margin-left: -7px;
+  margin-top: auto;
+}
+
+.LeafLeft {
+  margin-right: -7px;
+  margin-top: auto;
+}
+
+.Head {
+  margin-bottom: -4px;
+}
+
+.Pipe {
+  margin-bottom: -40px;
+  position: relative;
+  z-index: 6;
+}
+
+@media (max-width: 500px) {
+  .Pipe {
+    width: 30px;
+    margin-bottom: -5px;
+  }
+
+  .Stem {
+    width: 4px;
+  }
+
+  .LeafRight,
+  .LeafLeft {
+    width: 20px;
+  }
+
+  .Head {
+    width: 30px;
+  }
+}

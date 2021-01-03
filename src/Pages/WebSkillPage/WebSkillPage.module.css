@@ -1,0 +1,137 @@
+.SkillsPage {
+  min-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10080px;
+  background-color: #e4c492;
+}
+
+.Base {
+  position: absolute;
+  bottom: 200px;
+}
+
+.Container {
+  width: 169px;
+}
+
+.Container2 {
+  width: 90px;
+}
+
+.LevelsList {
+  z-index: 4;
+}
+
+.Level {
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color: white;
+  list-style: none;
+  margin: 35px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.Level > hr {
+  border: 1px solid white;
+  padding: 0;
+  margin: 0;
+  width: 85vw;
+}
+
+.Level > p {
+  padding: 0;
+  margin: 0;
+}
+
+.SkillsList {
+  z-index: 10;
+  margin-bottom: -10px;
+}
+
+.Skill {
+  color: white;
+  display: inline-block;
+  list-style: none;
+  margin: 0 75px;
+}
+
+.PlantsList {
+  z-index: 5;
+  position: absolute;
+  bottom: 20%;
+  left: 100px;
+  right: 0;
+  margin: auto;
+}
+
+.Plant {
+  z-index: 5;
+  display: inline-block;
+  list-style: none;
+  margin: 0 75px;
+}
+
+.SmallCactus {
+  position: absolute;
+  z-index: 0;
+  left: 10px;
+  bottom: 20%;
+}
+
+.BigCactus {
+  position: absolute;
+  z-index: 0;
+  right: 10px;
+  bottom: 20%;
+}
+
+@media (max-width: 500px) {
+  .SkillsPage {
+    min-width: 100vw;
+    left: 700vw;
+  }
+  .LevelsList {
+    padding: 0;
+    bottom: 20%;
+  }
+
+  .Base {
+    bottom: 20%;
+  }
+
+  .Level {
+    font-size: 8px;
+  }
+
+  .Container2 {
+    width: 10px;
+  }
+
+  .Container {
+    width: 50px;
+  }
+
+  .Skill {
+    margin: 0 13px;
+  }
+
+  .PlantsList {
+    left: 0;
+  }
+
+  .Plant {
+    margin: 0 10px;
+  }
+
+  .BigCactus {
+    width: 100px;
+  }
+
+  .SmallCactus {
+    width: 50px;
+  }
+}

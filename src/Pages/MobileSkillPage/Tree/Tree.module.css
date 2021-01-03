@@ -1,0 +1,41 @@
+.Plant {
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  z-index: 0;
+}
+
+.Stem {
+  width: 31.46px;
+  background-image: url('Stem.png');
+  margin-top: auto;
+  background-color: #a67142;
+  z-index: 0;
+  margin-bottom: -30px;
+}
+
+.Head {
+  margin-bottom: -100px;
+  z-index: 10;
+  position: relative;
+}
+
+.Bush {
+  margin-bottom: -5px;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .Stem {
+    width: 8px;
+  }
+
+  .Bush {
+    width: 40px;
+  }
+
+  .Head {
+    width: 60px;
+    margin-bottom: -30px;
+  }
+}
