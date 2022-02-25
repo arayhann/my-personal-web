@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import WelcomePage from './Pages/WelcomePage/WelcomePages';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage';
@@ -13,6 +13,8 @@ import Level3Page from './Pages/Level3Page/Level3Page';
 import Experience1Page from './Pages/Experience1Page/Experience1Page';
 import Experience2Page from './Pages/Experience2Page/Experience2Page';
 import Experience3Page from './Pages/Experience3Page/Experience3Page';
+import Experience4Page from './Pages/Experience4Page/Experience4Page';
+import Experience5Page from './Pages/Experience5Page/Experience5Page';
 import FinishPage from './Pages/FinishPage/FinishPage';
 
 import Character from './Components/Character/Character';
@@ -23,11 +25,22 @@ import Cloud from './Components/Cloud/Cloud';
 import './App.css';
 
 function App() {
+  const [loading, setLoading] = useState(
+    <div className="loading-page">
+      <div className="loader" />
+    </div>
+  );
+  useEffect(() => {
+    setLoading(<div></div>);
+  }, []);
+
   return (
     <div className="App-Base">
-      <Character />
+      {loading}
       <div className="App">
-        <div style={{ height: '100vh' }} />
+        <div style={{ height: '100vh' }}>
+          <Character />
+        </div>
         <WelcomePage />
         <AboutPage />
         <SkillsPage />
@@ -42,6 +55,8 @@ function App() {
         <Experience1Page />
         <Experience2Page />
         <Experience3Page />
+        <Experience4Page />
+        <Experience5Page />
         <FinishPage />
         <Cloud />
         <NormalGround
@@ -71,8 +86,8 @@ function App() {
         <CityGround
           width={
             window.matchMedia('(max-width: 500px)').matches === true
-              ? '600vw'
-              : '7200px'
+              ? '950vw'
+              : '10080px'
           }
           height="20%"
           bottom="0"

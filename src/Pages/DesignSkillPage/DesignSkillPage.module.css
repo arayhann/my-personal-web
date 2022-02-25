@@ -10,16 +10,13 @@
 
 .Base {
   position: absolute;
+  width: 1440px;
   bottom: 200px;
   z-index: 4;
 }
 
 .Container {
   width: 169px;
-}
-
-.Container2 {
-  width: 90px;
 }
 
 .LevelsList {
@@ -40,7 +37,7 @@
   border: 1px solid white;
   padding: 0;
   margin: 0;
-  width: 85vw;
+  width: 1224px;
 }
 
 .Level > p {
@@ -50,7 +47,10 @@
 
 .SkillsList {
   z-index: 10;
-  margin-bottom: -10px;
+  position: absolute;
+  left: 100px;
+  right: 0;
+  margin: auto;
 }
 
 .Skill {
@@ -95,12 +95,18 @@
     min-width: 100vw;
     left: 800vw;
   }
+
+  .Level > hr {
+    width: 85vw;
+  }
+
   .LevelsList {
     padding: 0;
     bottom: 20%;
   }
 
   .Base {
+    width: 100vw;
     bottom: 20%;
   }
 
@@ -108,22 +114,16 @@
     font-size: 8px;
   }
 
-  .Container2 {
-    width: 10px;
-  }
-
   .Container {
-    width: 50px;
+    width: 60px;
   }
 
-  .Skill {
-    margin: 0 13px;
-  }
-
+  .SkillsList,
   .PlantsList {
     left: 0;
   }
 
+  .Skill,
   .Plant {
     margin: 0 10px;
   }

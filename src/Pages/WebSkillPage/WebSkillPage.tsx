@@ -14,9 +14,6 @@ const webPage: React.FC = () => {
       <div className={classes.Base}>
         <ul className={classes.SkillsList}>
           <li className={classes.Skill}>
-            <div className={classes.Container2} />
-          </li>
-          <li className={classes.Skill}>
             <SmallBanner>HTML</SmallBanner>
             <div className={classes.Container} />
           </li>

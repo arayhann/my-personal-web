@@ -10,12 +10,9 @@ import classes from './RoboticsSkillPage.module.css';
 const webPage: React.FC = () => {
   return (
     <section className={classes.SkillsPage}>
-      <TitleBanner left={530}>Web Development</TitleBanner>
+      <TitleBanner left={530}>Robotics Skills</TitleBanner>
       <div className={classes.Base}>
         <ul className={classes.SkillsList}>
-          <li className={classes.Skill}>
-            <div className={classes.Container2} />
-          </li>
           <li className={classes.Skill}>
             <SmallBanner>Electronics Design</SmallBanner>
             <div className={classes.Container} />

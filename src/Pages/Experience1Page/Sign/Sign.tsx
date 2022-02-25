@@ -23,7 +23,7 @@ const sign: React.FC = () => {
           <div className={classes.Tiang} />
         </div>
       </div>
-      <Slide direction="up" triggerOnce={true} style={{ zIndex: 5 }}>
+      <Slide direction="down" triggerOnce={true} style={{ zIndex: 5 }}>
         <img src={BallonAir} className={classes.Ballon} alt="balloon" />
       </Slide>
     </div>

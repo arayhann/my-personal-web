@@ -46,6 +46,14 @@
     width: 20px;
   }
 
+  .LeafLeft {
+    margin-right: -2px;
+  }
+
+  .LeafRight {
+    margin-left: -2px;
+  }
+
   .Head {
     width: 30px;
   }

@@ -53,10 +53,26 @@
   background-color: #405075;
 }
 
+.Car {
+  position: absolute;
+  right: 0;
+  margin-right: -400px;
+  bottom: 0;
+  z-index: 6;
+}
+
+.TrafficLight {
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  margin-right: -460px;
+  bottom: 0;
+}
+
 @media (max-width: 500px) {
   .Skill {
     vertical-align: bottom;
-    left: 0;
+    left: 10px;
   }
 
   .Tiang {
@@ -81,9 +97,15 @@
     max-width: 300px;
   }
 
-  .Ballon {
-    margin-top: auto;
-    width: 180px;
-    margin-left: -100px;
+  .Car {
+    right: 0;
+    margin-right: 0;
+    width: 150px;
+    right: 30px;
+  }
+
+  .TrafficLight {
+    margin-right: 0;
+    width: 45px;
   }
 }

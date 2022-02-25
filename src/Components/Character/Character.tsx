@@ -1,28 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import Lodash from 'lodash';
 
+import { Slide } from 'react-awesome-reveal';
+
 import characterDefaultForward from './Character-default-forward.webp';
 import characterDefaultBackward from './Character-default-backward.webp';
 import characterWalkingForward from './Character-walking-forward.webp';
 import characterWalkingBackward from './Character-walking-backward.webp';
+import characterFalling from './Character-falling.png';
 import characterFinish from './Character-finish.png';
 import classes from './Character.module.css';
 
 const Character: React.FC = () => {
   const [prevOffset, setPrevOffset] = useState(0);
+  const [isShow, setShow] = useState(false);
 
-  const [character, setCharacter] = useState<string>(characterDefaultForward);
+  const [character, setCharacter] = useState<string>(characterFalling);
   const [isWalking, setWalking] = useState<boolean>(false);
   const [prevDirrection, setPrevDirrection] = useState<string>('forward');
 
   const toggleCharacterWalking = () => {
     let scrollX = document.querySelector('.App-Base')!.scrollLeft;
-
-    console.log(
-      document.querySelector('.App-Base')!.scrollLeft,
-      document.querySelector('.App-Base')!.scrollWidth
-    );
-
     let dirrection =
       scrollX > prevOffset
         ? 'forward'
@@ -32,7 +30,6 @@ const Character: React.FC = () => {
 
     if (isWalking === true) {
       if (prevDirrection !== dirrection) {
-        console.log('CHANGING DIRRECTION');
         if (dirrection === 'forward') {
           setCharacter(characterWalkingForward);
         } else if (dirrection === 'backward') {
@@ -49,20 +46,17 @@ const Character: React.FC = () => {
     ) {
       return;
     }
-    console.log('START');
 
     toggleCharacterStop.cancel();
     if (scrollX > prevOffset) {
-      console.log('MAJU');
       setCharacter(characterWalkingForward);
     } else if (scrollX < prevOffset) {
-      console.log('MUNDUR');
       setCharacter(characterWalkingBackward);
     }
-    console.log(scrollX, prevOffset);
 
     setPrevDirrection(dirrection);
     setWalking(true);
+    setShow(false);
   };
 
   const toggleCharacterStop = Lodash.debounce(() => {
@@ -73,13 +67,12 @@ const Character: React.FC = () => {
       ) {
         return;
       }
-      console.log('STOP');
 
       setWalking(false);
 
       let scrollX = document.querySelector('.App-Base')!.scrollLeft;
 
-      if (scrollX > 20000) {
+      if (scrollX === window.screen.width * 18.5 || scrollX > 22500) {
         setCharacter(characterFinish);
         return;
       }
@@ -106,7 +99,37 @@ const Character: React.FC = () => {
       window.removeEventListener('scroll', toggleCharacterStop, true);
     };
   });
-  return <img src={character} className={classes.Character} alt="logo" />;
+  return (
+    <div className={classes.CharacterBase}>
+      <Slide
+        direction="down"
+        triggerOnce={true}
+        style={{ height: '100vh', width: '100vw', position: 'fixed' }}
+        duration={1000}
+        onVisibilityChange={(
+          inView: boolean,
+          entry: IntersectionObserverEntry
+        ) => {
+          if (inView) {
+            setTimeout(() => {
+              setCharacter(characterDefaultForward);
+            }, 1000);
+
+            setTimeout(() => {
+              setShow(true);
+            }, 1100);
+          }
+        }}
+      >
+        <img src={character} className={classes.Character} alt="logo" />
+      </Slide>
+      {isShow ? (
+        <p className={classes.AnimateFlicker}>Scroll Left and Right</p>
+      ) : (
+        <div />
+      )}
+    </div>
+  );
 };
 
 export default Character;
